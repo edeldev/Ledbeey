@@ -7,7 +7,7 @@ export const metadata = {
   description: 'Marca de ropa Moderna, Estilo Moderno, diseños modernos',
 }
 
-function DiseñoModerno() {
+function DisenoModerno() {
   return (
     <div className="main ps-0 ps-md-5 bg__moderno">
       <div className="text-center flex__router text-black mostrar-modern">
@@ -46,4 +46,4 @@ function DiseñoModerno() {
   )
 }
 
-export default DiseñoModerno
+export default DisenoModerno
