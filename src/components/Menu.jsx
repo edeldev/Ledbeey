@@ -5,7 +5,7 @@ function Menu({setMenu}) {
     <div className="menu__nav">
         <Link href="/lujo" onClick={() => setMenu(false)}>Ledbeey Lujo</Link>
         <Link href="/elegancia" onClick={() => setMenu(false)}>Ledbeey Elegante</Link>
-        <Link href="/diseño-moderno" onClick={() => setMenu(false)}>Ledbeey Diseño Moderno</Link>
+        <Link href="/diseno-moderno" onClick={() => setMenu(false)}>Ledbeey Diseño Moderno</Link>
         <Link href="/brillante" onClick={() => setMenu(false)}>Ledbeey Brillante</Link>
         <Link href="/estilo-minimalista" onClick={() => setMenu(false)}>Ledbeey Estilo Minimalista</Link>
         <Link href="/estilo-futurista" onClick={() => setMenu(false)}>Ledbeey Futurista</Link>
