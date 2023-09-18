@@ -23,13 +23,13 @@ function NavVertical() {
             </div>
 
             <div className="social__media">
-                <a href="https://facebook.com" target="_blank">
+                <a href="https://www.facebook.com/ledbeey/" target="_blank">
                     <Facebook className='fs-4'/>
                 </a>
                 <a href="https://instagram.com/ledbeey" target="_blank">
                     <Instagram className='fs-4'/>
                 </a>
-                <a href="https://tiktok.com" target="_blank">
+                <a href="https://www.tiktok.com/@ledbeey" target="_blank">
                     <Tiktok className='fs-4'/>
                 </a>
             </div>

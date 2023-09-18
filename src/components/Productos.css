@@ -84,3 +84,10 @@
         padding: 5px 20px 5px 20px!important;
     }
 }
+
+@media (max-width: 350px) {
+    .flex1__col {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+}

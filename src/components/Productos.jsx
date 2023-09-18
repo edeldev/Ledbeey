@@ -6,7 +6,7 @@ function renderProductSection(collection) {
     return (
       <div className="row justify-content-center align-items-center">
         {collection.map((item, index) => (
-          <div className="col-6 col-md-4" key={index}>
+          <div className="col-6 col-md-4 flex1__col" key={index}>
             <div className="galeria__card">
               <div className="galeria p-3">
                 <Image src={item.imagen} alt={`imagen-${item.titulo}`} className='img-fluid' placeholder="blur" />
