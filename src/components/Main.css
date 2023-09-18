@@ -1,0 +1,372 @@
+html {
+    scroll-padding-top: 73px;
+}
+
+:root {
+    --background-color: #ffffff30;
+    --background-image: linear-gradient(100deg,#d7ff084a 50%,#dbf315 50%);
+    --color: #000000;
+}
+
+/* Clase de estilo compartido */
+.button-shared-style {
+    background-color: var(--background-color);
+    background-image: var(--background-image);
+    color: var(--color);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    font-weight: bold;
+    -webkit-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    border: none;
+    display: inline-block;
+    will-change: background-position;
+    -webkit-background-size: 210% 100%;
+    -webkit-background-size: 210% 100%;
+    background-size: 210% 100%;
+    -webkit-background-position: 99% center;
+    -webkit-background-position: 99% center;
+    background-position: 99% center;
+    background-repeat: no-repeat;
+    -webkit-transition: background-position .66667s cubic-bezier(.24,.22,.31,1.07);
+    -webkit-transition: background-position .66667s cubic-bezier(.24,.22,.31,1.07);
+    -webkit-transition: background-position .66667s cubic-bezier(.24,.22,.31,1.07);
+    transition: background-position .66667s cubic-bezier(.24,.22,.31,1.07);
+    margin: 0 auto;
+}
+
+.button-shared-style:hover {
+    background-position: 0 center;
+    color: var(--hover-color);
+}
+  
+
+.flex__main {
+    position: relative;
+}
+
+.edition {
+    text-decoration: overline;
+}
+
+.main span {
+    text-decoration: line-through;
+    font-weight: normal;
+    color: #dd1010;
+}
+
+.btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    background-color: #d5d4d470;
+    backdrop-filter: blur(25px);
+    padding-top: .3rem;
+    padding-bottom: .3rem;
+    margin: 0;
+}
+
+.btn-negro {
+    background-color: #000000;
+    height: 15px;
+    width: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.btn-blanco {
+    background-color: #ffffff;
+    height: 15px;
+    width: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.btn-amarillo {
+    background-color: #ffe000;
+    height: 15px;
+    width: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+/* CLICK EN BTNS CLASS "ACTIVE" */
+.active {
+    animation: jump-up .5s ease-in-out;
+}
+
+@keyframes jump-up {
+    0% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.flex__main::before {
+    content: 'FUTURISTIC';
+    position: absolute;
+    font-size: 70px;
+    bottom: 45%;
+    left: 10%;
+    color: #FFFFFF;
+    pointer-events: none;
+    z-index: 2;
+}
+
+/** TRANSICIONES PAGE ROUTER */
+/*! LUJO */
+.flex__main-router img {
+    animation: top-lujo .8s ease;
+}
+
+@keyframes top-lujo {
+    0% {
+        transform: translateY(-10rem);
+    }
+
+   100% {
+       transform: translateY(0);
+    }
+}
+
+.flex__router {
+    animation: bottom-lujo .8s ease;
+}
+
+@keyframes bottom-lujo {
+    0%{
+        transform: translateY(10rem);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+}
+
+/*! ELEGANCIA */
+.mostrar-elegant-img img {
+    animation: right-elegant .8s ease;
+}
+
+@keyframes right-elegant {
+    0% {
+        transform: translateX(-10rem);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.mostrar-elegant {
+    animation: left-elegant .8s ease;
+}
+
+@keyframes left-elegant {
+    0%{
+        transform: translateX(10rem);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
+}
+
+/*! DISEÑO MODERNO */
+.mostrar-modern-img img {
+    animation: bottom-modern .8s ease;
+}
+
+@keyframes bottom-modern {
+    0% {
+        transform: translateY(10rem);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+.mostrar-modern {
+    animation: top-modern .8s ease;
+
+}
+
+@keyframes top-modern {
+    0%{
+         transform: translateY(-10rem);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+}
+
+/*! BRILLANTE */
+.mostrar-brillante-img img {
+    animation: left-brillant .8s ease;
+}
+
+@keyframes left-brillant {
+    0% {
+        transform: translateX(10rem);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.mostrar-brillante {
+    animation: right-brilliant .8s ease;
+}
+
+@keyframes right-brilliant  {
+    0%{
+        transform: translateX(-10rem);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
+}
+
+/*! ESTILO MINIMALISTA */
+
+.mostrar-minimalist-img img {
+    animation: righ-minimalist .8s ease;
+}
+
+@keyframes righ-minimalist {
+    0% {
+        transform: translateX(10rem);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.mostrar-minimalist {
+    animation: top-minimalist .8s ease;
+}
+
+@keyframes top-minimalist {
+    0%{
+        transform: translateY(10rem);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+}
+
+/*! ESTILO FUTURISTA */
+.mostrar-futuristic-img img {
+    animation: right-futuristic .8s ease;
+}
+
+@keyframes right-futuristic {
+    0% {
+        transform: translateX(-10rem);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.mostrar-futuristic {
+    animation: top-futuristic .8s ease;
+}
+
+@keyframes top-futuristic {
+    0%{
+        transform: translateY(-10rem);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+}
+
+/*! YEAR */
+.mostrar-year-img img {
+    animation: righ-year .8s ease;
+}
+
+@keyframes righ-year {
+    0% {
+        transform: translateX(-100rem);
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: translateX(0);
+        transform: rotate(0);
+    }
+}
+
+.mostrar-year {
+    animation: top-year .8s ease;
+}
+
+
+ @keyframes top-year {
+    0%{
+        transform: translateX(10rem);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
+}
+
+
+@media (max-width: 965px) {
+    .flex__main img,
+    .flex__main-router img {
+        width: 450px;
+    }
+
+    .flex__main::before {
+        font-size: 50px;
+        left: 15%;
+    }
+}
+
+@media (max-width: 780px) {
+    .flex__contenido,
+    .flex__router {
+        order: 3;
+    }
+
+    .flex__main img,
+    .flex__main-router img {
+        width: 350px;
+    }
+
+    .flex__main::before {
+        font-size: 40px;
+        left: 13%;
+    }
+
+    .flex__main button,
+    .flex__router button {
+        font-size: 12px;
+        margin-bottom: 1rem;
+    }
+
+    .btns {
+        margin-bottom: 1rem;
+    }
+}
