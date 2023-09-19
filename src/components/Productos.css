@@ -1,9 +1,13 @@
+.productos__bg {
+    background-color: #171717;
+}
+
 .galeria__card {
     margin-bottom: 20px; /* Agrega el espaciado vertical deseado */
 }
 
 .galeria img {
-    background-color: #F8F8F8;
+    background-color: #000000;
     backdrop-filter: blur(20px);
     padding-top: 1rem;
     padding-bottom: 1rem;

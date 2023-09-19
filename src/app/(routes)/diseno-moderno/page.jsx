@@ -14,7 +14,7 @@ function DisenoModerno() {
         <h2>DISEÑO MODERNO</h2>
         <p>T-shirt ModernDark</p>
         <p className='edition fw-light'>- New Edition</p>
-        <p className='fw-bold'>$28.47USD <span className='text-white'>$49.74USD</span></p>
+        <p className='fw-bold'>$28.47USD <span>$49.74USD</span></p>
         <button 
           type='button' 
           className='py-2 px-4 button-shared-style' 

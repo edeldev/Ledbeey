@@ -1,4 +1,4 @@
-body.remover {
+html.remover {
     overflow: hidden;
 }
 
@@ -87,6 +87,52 @@ body.remover {
     border-radius: 10px;
 }
 
+/** CARRITO */
+.carrito {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 50;
+    height: 100vh;
+    width: 390px;
+    background-color: hsla(0,0%,100%,.8);
+    backdrop-filter: blur(24px);;
+}
+
+.header__cart {
+    height: 30px;
+}
+
+.border__x {
+    border: 1px solid rgb(153 148 148);
+    border-radius: 0.25rem;
+    padding: 0.25rem;
+    transition: background-color .5s ease;
+}
+
+.border__x:hover {
+    background-color: rgb(153 148 148 / 50%);
+    cursor: pointer;
+}
+
+.close__cart {
+    cursor: pointer;
+}
+
+.content__cart {
+    height: calc(100vh - 30px);
+}
+
+.cart__icono {
+    font-size: 5rem;
+}
+
+@media (max-width: 770px) {
+    .carrito {
+        width: 100%;
+    }
+}
+
 /** HEADER */
 
 .header {
@@ -157,6 +203,7 @@ body.remover {
 .icono {
     color: #FFFFFF;
     transition: all .5s ease;
+    cursor: pointer;
 }
 
 .icono:hover {

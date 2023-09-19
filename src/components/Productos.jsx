@@ -25,16 +25,18 @@ function renderProductSection(collection) {
 
   function Productos() {
     return (
-      <div className="container-xl py-4">
-        <h2 className='py-4 ps-3 m-0' id="ledbeey">Colección Ledbeey</h2>
-        {renderProductSection(collectionLedbeey)}
-  
-        <h2 className='py-4 ps-3 m-0' id="edeldev">Colección EdelDev</h2>
-        {renderProductSection(collectionEdelDev)}
-  
-        <h2 className='py-4 ps-3 m-0' id="nft">Colección Nfts</h2>
-        {renderProductSection(collectionNft)}
-      </div>
+      <section className="productos__bg">
+          <div className="container-xl py-4 text-white">
+            <h2 className='py-4 ps-3 m-0' id="ledbeey">Colección Ledbeey</h2>
+            {renderProductSection(collectionLedbeey)}
+      
+            <h2 className='py-4 ps-3 m-0' id="edeldev">Colección EdelDev</h2>
+            {renderProductSection(collectionEdelDev)}
+      
+            <h2 className='py-4 ps-3 m-0' id="nft">Colección Nfts</h2>
+            {renderProductSection(collectionNft)}
+          </div>
+        </section>
     );
   }
   

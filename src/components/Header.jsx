@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import Menu from './Menu'
+import Carrito from './Carrito'
 import { Cart3 } from 'react-bootstrap-icons'
 import { List } from 'react-bootstrap-icons'
 import { X } from 'react-bootstrap-icons'
@@ -10,7 +11,7 @@ import LogoLedbeey from '../../public/ledbeey-light.png'
 function Header() {
   const [ menu, setMenu ] = useState(false);
   const [scrollY, setScrollY] = useState(0);
-
+  const [ carrito, setCarrito ] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -35,12 +36,22 @@ function Header() {
       }
 
       useEffect(() => {
-        const bodyOver = document.querySelector("body");
-     
-        menu ? bodyOver.classList.add("remover") : bodyOver.classList.remove("remover")
-     
-     
+        let htmlOver = document.querySelector("html");
+        menu ? htmlOver.classList.add("remover") : htmlOver.classList.remove("remover")
        }, [menu]);
+
+       useEffect(() => {
+        let htmlOver = document.querySelector("html");
+        carrito ? htmlOver.classList.add("remover") : htmlOver.classList.remove("remover")
+       }, [carrito])
+
+       const openCart = () => {
+        carrito ? 
+        setTimeout(() => {
+          setCarrito(false)
+        }, 3000)
+        : setCarrito(true)
+       }
 
   return (
     <>
@@ -62,14 +73,15 @@ function Header() {
             }
            </div>
             <nav className='flex__nav'>
-                <Link href="/carrito">
-                    <Cart3 className="fs-5 icono" />
-                </Link>
+                <Cart3 className="fs-5 icono" onClick={openCart} />
             </nav>
         </header>
 
         {/* Menu */}
       { menu && <Menu setMenu={setMenu} /> }
+
+      {/* Carrito */}
+      { carrito && <Carrito setCarrito={setCarrito} />  }
     </>
   )
 }
