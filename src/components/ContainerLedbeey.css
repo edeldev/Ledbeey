@@ -120,7 +120,7 @@ html.remover {
 }
 
 .content__cart {
-    height: calc(100vh - 30px);
+    height: 90vh;
 }
 
 .cart__icono {
