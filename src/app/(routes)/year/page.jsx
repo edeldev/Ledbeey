@@ -9,7 +9,7 @@ export const metadata = {
 
 function Year() {
   return (
-    <div className="main ps-0 ps-md-5 bg__year">
+    <div className="main ps-0 ps-md-5 bg__year py-5">
       <div className="text-center flex__router text-white mostrar-year">
         <h2>YEAR (FASHION)</h2>
         <p>T-shirt YearDark</p>

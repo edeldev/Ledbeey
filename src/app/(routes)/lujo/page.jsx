@@ -9,7 +9,7 @@ export const metadata = {
 
 function Lujo() {
   return (
-    <div className="main ps-0 ps-md-5 bg__lujo">
+    <div className="main ps-0 ps-md-5 bg__lujo py-5">
       <div className="text-center flex__router text-black">
         <h2>LUJO</h2>
         <p>T-shirt LuxuryDark</p>

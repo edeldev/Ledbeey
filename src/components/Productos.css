@@ -6,6 +6,15 @@
     margin-bottom: 20px; /* Agrega el espaciado vertical deseado */
 }
 
+.galeria {
+    transition: all .8s ease-in-out;
+}
+.galeria:hover {
+    border: 1px solid red;
+    cursor: pointer;
+    border-radius: .5rem;
+}
+
 .galeria img {
     background-color: #000000;
     backdrop-filter: blur(20px);
@@ -20,16 +29,12 @@
     text-decoration: line-through;
     font-weight: normal;
     color: #dd1010;
-    padding-left: 1rem;
 }
 
 @media (max-width: 500px){
     .galeria img {
         padding-left: 0;
         padding-right: 0;
-    }
-    .galeria span {
-        font-size: 13px;
     }
 }
 
@@ -45,45 +50,7 @@
     }
 }
 
-.galeria button {
-    background-color: #f5f59b45;
-    background-image: linear-gradient(100deg,#bdd733a3 50%,#F4F580 50%);
-    color: #000000;
-    -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: blur(5px);
-    border-radius: 10px;
-    font-weight: bold;
-    -webkit-transition: 0.5s;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    border: none;
-    display: inline-block;
-    will-change: background-position;
-    -webkit-background-size: 210% 100%;
-    -webkit-background-size: 210% 100%;
-    background-size: 210% 100%;
-    -webkit-background-position: 99% center;
-    -webkit-background-position: 99% center;
-    background-position: 99% center;
-    background-repeat: no-repeat;
-    -webkit-transition: background-position .66667s cubic-bezier(.24,.22,.31,1.07);
-    -webkit-transition: background-position .66667s cubic-bezier(.24,.22,.31,1.07);
-    -webkit-transition: background-position .66667s cubic-bezier(.24,.22,.31,1.07);
-    transition: background-position .66667s cubic-bezier(.24,.22,.31,1.07);
-    margin: 0 auto;
-}
-
-.galeria button:hover {
-    background-position: 0 center;
-}
-
 @media (max-width: 460px){
-    .galeria {
-        text-align: center;
-    }
-    .galeria span {
-        padding-left: 0;
-    }
     .galeria button {
         padding: 5px 20px 5px 20px!important;
     }

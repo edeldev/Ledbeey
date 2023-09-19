@@ -130,6 +130,7 @@ html.remover {
 @media (max-width: 770px) {
     .carrito {
         width: 100%;
+        height: auto;
     }
 }
 
@@ -419,17 +420,6 @@ html.remover {
 
     .menu__vertical, .linea {
         display: none;
-    }
-
-    .bg__lujo,
-    .bg__elegancia,
-    .bg__moderno,
-    .bg__brillante,
-    .bg__minimalist,
-    .bg__futuristic,
-    .bg__year,
-    .bg__loader {
-        height: calc(100vh - 14%)
     }
 }
 

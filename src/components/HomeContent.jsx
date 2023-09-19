@@ -1,5 +1,4 @@
 import CamisaLedbeey from "./CamisaLedbeey"
-import { Suspense } from "react"
 
 function HomeContent({selectedColor, handleColor}) {
     return (
@@ -16,7 +15,6 @@ function HomeContent({selectedColor, handleColor}) {
                 </div>
             </div>
             <div className="flex__main d-flex flex-column">
-                <Suspense fallback="Cargando...">
                     <CamisaLedbeey selectedColor={selectedColor} />
                     <button 
                     type='button' 
@@ -33,7 +31,6 @@ function HomeContent({selectedColor, handleColor}) {
                     >
                         ¡COMPRAR!
                     </button>
-                </Suspense>
             </div>
         </>
     )

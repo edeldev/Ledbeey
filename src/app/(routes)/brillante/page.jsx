@@ -9,7 +9,7 @@ export const metadata = {
 
 function Brillante() {
   return (
-    <div className="main ps-0 ps-md-5 bg__brillante">
+    <div className="main ps-0 ps-md-5 py-5 bg__brillante">
       <div className="text-center flex__router text-black mostrar-brillante">
         <h2>BRILLANTE</h2>
         <p>T-shirt BrillantDark</p>

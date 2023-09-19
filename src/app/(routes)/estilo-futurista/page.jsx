@@ -10,7 +10,7 @@ export const metadata = {
 
 function EstiloFuturista() {
   return (
-    <div className="main ps-0 ps-md-5 bg__futuristic">
+    <div className="main ps-0 ps-md-5 bg__futuristic py-5">
       <div className="text-center flex__router text-white mostrar-futuristic">
         <h2>ESTILO FUTURISTA</h2>
         <p>T-shirt FuturisticDark</p>
