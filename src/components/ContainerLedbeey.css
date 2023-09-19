@@ -24,17 +24,10 @@ html.remover {
     overflow: hidden;
     background-color: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(5px);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
     z-index: 40;
     border-radius: 20px 20px 0 0;
     animation: bottom .3s ease;
     overflow-y: scroll;
-    padding-top: 8rem;
-    padding-bottom: 1rem;
 }
 
 @keyframes bottom {
@@ -47,24 +40,35 @@ html.remover {
     }
 }
 
+.flex__navegacion {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 2rem;
+
+}
+
 .menu__nav a {
     text-decoration: none;
     color: #000000;
-    padding-bottom: 20px;
     transition: all .3s ease;
     font-weight: normal;
     display: block;
     font-size: 20px;
+    padding-left: 2rem;
+    padding-bottom: 10px;
 }
 
 .menu__nav a:hover {
     color: #00000092;
+    background-color: #ffffffc3 ;
 }
 
 .menu__nav details {
     color: #000000;
     font-weight: bold;
     font-size: 20px;
+    padding-left: 2rem;
 }
 
 .menu__nav details a {
@@ -79,14 +83,13 @@ html.remover {
 }
 
 .menu__nav details a:hover {
-    color: #ffffff92;
+    color: #000000;
 }
 
 .menu__nav details div {
     background-color: #00000073;
     border-radius: 10px;
 }
-
 /** CARRITO */
 .carrito {
     position: fixed;
