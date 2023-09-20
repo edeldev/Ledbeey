@@ -6,7 +6,7 @@ function Menu({setMenu}) {
       <h4 className="text-center py-2 m-0 fw-bold bg-dark text-white">Programa tu éxito con estilo</h4>
       <div className="flex__navegacion">
         <details>
-          <summary className="py-3">Colecciones</summary>
+          <summary className="pt-3">Colecciones</summary>
           <div>
             <Link href="/lujo" onClick={() => setMenu(false)}>Ledbeey Lujo</Link>
             <Link href="/elegancia" onClick={() => setMenu(false)}>Ledbeey Elegante</Link>

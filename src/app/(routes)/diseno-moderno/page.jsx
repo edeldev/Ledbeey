@@ -12,7 +12,7 @@ function DisenoModerno() {
     <div className="main ps-0 ps-md-5 bg__moderno py-5">
       <div className="text-center flex__router text-black mostrar-modern">
         <h2>DISEÑO MODERNO</h2>
-        <p>T-shirt ModernDark</p>
+        <p>T-shirt ModernBlack</p>
         <p className='edition fw-light'>- New Edition</p>
         <p className='fw-bold'>$28.47USD <span>$49.74USD</span></p>
         <button 

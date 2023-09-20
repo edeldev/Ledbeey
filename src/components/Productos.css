@@ -2,6 +2,147 @@
     background-color: #171717;
 }
 
+/** Cambio de background segun rutas */
+.lujo__bg {
+    background-color: #ffdb00;
+
+    & .galeria:hover {
+        border: 1px solid #000000;
+    }
+
+    & h2, p {
+        color: black;
+    }
+
+    & .galeria img {
+        background-color: #181818;
+    }
+
+    & .envio {
+        border: 1px solid #000000;
+    }
+}
+
+.elegant__bg {
+    background-color: #B87333;
+
+    & .galeria:hover {
+        border: 1px solid #F5F5DC;
+    }
+
+    & h2, h4, p {
+        color: rgb(0, 0, 0);
+    }
+
+    & .galeria img {
+        background-color: #F5F5DC;
+    }
+
+    & .envio {
+        border: 1px solid #f5f4f4;
+    }
+}
+
+.moderno__bg {
+    background-color: #4CAF50;
+
+    & .galeria:hover {
+        border: 1px solid #ffffff;
+    }
+
+    & h2, h4, p {
+        color: rgb(0, 0, 0);
+    }
+
+    & .galeria img {
+        background-color: #ffffff;
+    }
+
+    & .envio {
+        border: 1px solid #ffffff;
+    }
+}
+
+.brillante__bg {
+    background-color: #8c8c8c;
+
+    & .galeria:hover {
+        border: 1px solid #ffffff;
+    }
+
+    & h2, h4, p {
+        color: rgb(0, 0, 0);
+    }
+
+    & .galeria img {
+        background-color: #ffffff;
+    }
+
+    & .envio {
+        border: 1px solid #ffffff;
+    }
+}
+
+.minimalista__bg {
+    background-color: #F57C00;
+
+    & .galeria:hover {
+        border: 1px solid #FFD280;
+    }
+
+    & h2, h4, p {
+        color: rgb(0, 0, 0);
+    }
+
+    & .galeria img {
+        background-color: #FFD280;
+    }
+
+    & .envio {
+        border: 1px solid #FFD280;
+    }
+}
+
+.futurista__bg {
+    background-color: #3E3E3E;
+
+    & .galeria:hover {
+        border: 1px solid #A3A3A3;
+    }
+
+    & h2, h4, p {
+        color: rgb(255, 255, 255);
+    }
+
+    & .galeria img {
+        background-color: #A3A3A3;
+    }
+
+    & .envio {
+        border: 1px solid #A3A3A3;
+    }
+}
+
+.year__bg {
+    background-color: #00B894;
+
+    & .galeria:hover {
+        border: 1px solid #FF6F61;
+    }
+
+    & h2, h4, p {
+        color: rgb(255, 255, 255);
+    }
+
+    & .galeria img {
+        background-color: #FF6F61;
+    }
+
+    & .envio {
+        border: 1px solid #FF6F61;
+    }
+}
+
 .galeria__card {
     margin-bottom: 20px; /* Agrega el espaciado vertical deseado */
 }
@@ -34,7 +175,7 @@
     top: 16px;
     left: 16px;
     background-color: red;
-    z-index: 50;
+    z-index: 1;
     padding: 0.2rem;
     border-top-right-radius: 0.2rem;
     border-bottom-right-radius: 0.2rem;
@@ -74,6 +215,10 @@
 
 @media (max-width: 460px){
     .galeria h4 {
+        font-size: 16px;
+    }
+
+    .parrafos__font {
         font-size: 14px;
     }
 }

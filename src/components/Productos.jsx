@@ -13,7 +13,7 @@ export function renderProductSection(collection) {
                   <Image src={item.imagen} alt={`imagen-${item.titulo}`} className='img-fluid' placeholder="blur" />
                 </a>
                 <h4 className='pt-3 m-0' title={item.titulo}>{item.titulo}</h4>
-                <p className='fw-bold my-3' dangerouslySetInnerHTML={{ __html: item.parrafo }}></p>
+                <p className='fw-bold my-3 parrafos__font' dangerouslySetInnerHTML={{ __html: item.parrafo }}></p>
                 <p className="envio px-4 py-1 rounded">+ Envio Gratis</p>
               </div>
             </div>

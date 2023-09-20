@@ -12,7 +12,7 @@ function Brillante() {
     <div className="main ps-0 ps-md-5 py-5 bg__brillante">
       <div className="text-center flex__router text-black mostrar-brillante">
         <h2>BRILLANTE</h2>
-        <p>T-shirt BrillantDark</p>
+        <p>T-shirt BrillantSilver</p>
         <p className='edition fw-light'>- New Edition</p>
         <p className='fw-bold'>$28.47USD <span>$49.74USD</span></p>
         <button 

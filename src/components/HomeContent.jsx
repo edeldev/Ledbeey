@@ -1,10 +1,17 @@
 import CamisaLedbeey from "./CamisaLedbeey"
 
 function HomeContent({selectedColor, handleColor}) {
+
+    const colorMap = {
+        negro: 'LedbeeyBlack',
+        blanco: 'LedbeeyWhite',
+        amarillo: 'LedbeeyOrange',
+      };
+
     return (
         <>
             <div className="text-center text-white flex__contenido">
-                <h2>LedbeeyDark</h2>
+                <h2>{colorMap[selectedColor]}</h2>
                 <p >T-shirt Futuristic</p>
                 <p className='edition'>- New Edition</p>
                 <p className='fw-bold'>$28.47USD <span>$49.74USD</span></p>

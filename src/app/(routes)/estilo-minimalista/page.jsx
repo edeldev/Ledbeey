@@ -13,7 +13,7 @@ function EstiloMinimalista() {
     <div className="main ps-0 ps-md-5 bg__minimalist py-5">
       <div className="text-center flex__router text-black mostrar-minimalist">
         <h2>ESTILO MINIMALISTA</h2>
-        <p>T-shirt MinimalistDark</p>
+        <p>T-shirt MinimalistBlack</p>
         <p className='edition fw-light'>- New Edition</p>
         <p className='fw-bold'>$28.47USD <span>$49.74USD</span></p>
         <button 

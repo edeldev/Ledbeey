@@ -13,7 +13,7 @@ function Elegancia() {
     <div className="main ps-0 ps-md-5 bg__elegancia py-5">
       <div className="text-center flex__router text-black mostrar-elegant">
         <h2>ELEGANCIA</h2>
-        <p>T-shirt ElegantDark</p>
+        <p>T-shirt ElegantBlack</p>
         <p className='edition fw-light'>- New Edition</p>
         <p className='fw-bold'>$28.47USD <span>$49.74USD</span></p>
         <button 
