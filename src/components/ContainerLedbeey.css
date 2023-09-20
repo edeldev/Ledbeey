@@ -2,6 +2,10 @@ html.remover {
     overflow: hidden;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 .container__ledbeey {
     height: 100vh;
     width: 100%;
